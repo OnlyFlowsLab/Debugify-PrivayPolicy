@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugify - Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #202124;
+            --accent-color: #1a73e8;
+            --border-color: #dadce0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+        h1 {
+            color: var(--accent-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #3c4043;
+        }
+        p, li {
+            font-size: 16px;
+            color: #5f6368;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .date {
+            font-style: italic;
+            color: #80868b;
+            margin-bottom: 30px;
+        }
+        .highlight {
+            background-color: #e8f0fe;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Debugify</h1>
+        <p class="date">Last Updated: October 10, 2026</p>
+
+        <div class="highlight">
+            <strong>TL;DR:</strong> Debugify runs entirely on your local machine. We do not track you, we do not have analytics, and we do not collect, sell, or transfer your browsing data, website content, or personal information to any servers.
+        </div>
+
+        <h2>1. Information We Collect (And What We Don't)</h2>
+        <p>Debugify is designed with a privacy-first architecture. Because our tools operate natively within your browser, <strong>we do not collect, store, or transmit your personal data to our servers.</strong></p>
+        <ul>
+            <li><strong>Website Content & DOM:</strong> All inspections, color extractions, and code modifications happen locally on your device. Nothing is sent to the cloud.</li>
+            <li><strong>Screenshots:</strong> Screenshots are processed entirely locally. If you choose to save them to your Library, they are stored securely in your browser's local IndexedDB.</li>
+            <li><strong>Analytics & Tracking:</strong> We do not use Google Analytics or any other telemetry tools. We have no way of knowing how you use the extension.</li>
+        </ul>
+
+        <h2>2. Why We Request Certain Permissions</h2>
+        <p>To provide advanced developer tools, Debugify requires specific Chrome permissions. Here is how they are used strictly locally:</p>
+        <ul>
+            <li><strong>Web History & Browsing Data:</strong> We request this so that our "Debug" tool can allow you to clear a site's cookies, cache, and history with one click. We never read, store, or transmit your browsing history.</li>
+            <li><strong>Tabs & Scripting:</strong> Required to inject our inspection tools into the current tab and capture screenshots of the visible area.</li>
+        </ul>
+
+        <h2>3. Third-Party Services & APIs</h2>
+        <p>While Debugify has no backend servers of its own, certain features optionally interact with third-party services directly from your browser:</p>
+        <ul>
+            <li><strong>Licensing (Polar):</strong> If you use Debugify Pro, your license key and an anonymous device identifier are securely sent to our payment provider, Polar (polar.sh), once a day to verify your subscription status. No other data is shared.</li>
+            <li><strong>Site Stack & Network Lookups:</strong> If you use our Tech Stack and SEO tools, the extension may query public APIs (like dns.google or crt.sh) to fetch server information. You can disable these lookups at any time in Settings > Privacy.</li>
+        </ul>
+
+        <h2>4. Data Sharing and Sales</h2>
+        <p>We comply fully with the Chrome Web Store Developer Program Policies. We certify that:</p>
+        <ul>
+            <li>We do not sell or transfer user data to third parties.</li>
+            <li>We do not use or transfer user data for purposes that are unrelated to Debugify's core functionality.</li>
+            <li>We do not use or transfer user data to determine creditworthiness or for lending purposes.</li>
+        </ul>
+
+        <h2>5. Changes to This Policy</h2>
+        <p>If we update this Privacy Policy, we will update the "Last Updated" date at the top of this page. Because we do not collect email addresses, we encourage users to review this page periodically.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or how Debugify handles your data, please contact us by opening an issue on our GitHub repository.</p>
+    </div>
+</body>
+</html>
